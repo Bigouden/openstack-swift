@@ -6,4 +6,5 @@ LABEL maintainer="Thomas GUIRRIEC <thomas@guirriec.fr>"
 EXPOSE 8080
 HEALTHCHECK CMD nc -vz localhost 8080 || exit 1
 # hadolint ignore=DL3002
-USER root # nosemgrep
+# nosemgrep
+USER root

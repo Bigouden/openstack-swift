@@ -20,5 +20,7 @@ swift -A http://127.0.0.1:8080/auth/v1.0 -U test:tester -K testing post test # D
 # Upload "test.txt" in OpenStack Swift "test" Container
 swift -A http://127.0.0.1:8080/auth/v1.0 -U test:tester -K testing upload test test.txt # DevSkim: ignore DS162092
 
+printf "OpenStack Swift start !"
+
 # Sleep infinity
 sleep infinity

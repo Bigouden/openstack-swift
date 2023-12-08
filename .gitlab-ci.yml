@@ -20,7 +20,7 @@ stages:
   image: $CONTAINER_CLIENT_IMAGE
   before_script:
     - apk add --no-cache --update py3-pip
-    - pip install python-swiftclient
+    - pip install --break-system-packages python-swiftclient
   variables:
     GIT_STRATEGY: none
   dependencies: []

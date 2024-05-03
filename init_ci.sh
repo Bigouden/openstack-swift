@@ -7,7 +7,7 @@ export CI=true
 nohup /init &
 
 # Wait For TCP 8080
-while ! nc -vz -w 1 localhost 8080 >/dev/null 2>&1; do # DevSkim: ignore DS162092
+while ! nc -vz -w 1 127.0.0.1 8080 >/dev/null 2>&1; do # DevSkim: ignore DS162092
 	sleep 1
 done
 
